@@ -1,10 +1,11 @@
 const express = require('express');
 const { MongoClient } = require('mongodb');
-var cors = require('cors')
-app.use(cors())
 
 const app = express();
 const port = 3000;
+var cors = require('cors')
+app.use(cors())
+
 app.use(express.json());
 // MongoDB connection URL
 const mongoUrl = 'mongodb+srv://root:root23@cluster0.rnxg0b2.mongodb.net/';
